@@ -3,37 +3,61 @@
     padding: 0ch;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    background-image: url("background.png") 
+    background-image: url("/images/background.png") 
 }
 
 header{
-
+    height: 96vh;
+    width: 100vw;
 }
 
 #topo{
-    width: 100%;
-    height: 40px;
-    background-color: #D991BA;
+    height: 5vh;
+    width: 100vw;
+    position: fixed;
 }
 
-.imagensTopo{
+.botao{
+    border: none;
+    color: #F5D5ED;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
 
-    width: 100%;
-    height: 100%;
+}
+
+#botaoTopo{
+    background-color: #b95b90;
+    transition-duration: 0.4s;
+}
+
+#botaoTopo:hover {
+    background-color: #D991BA;
+    color: white;
+}
+
+#imagensHeader{
+    height: 96vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("/images/backgroundPrincipal.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
-#imagemCima{
-    z-index: 2;
-
-}
-
-#imagemBaixo{
-    z-index: 1;
-
+#imagensHeader a img{
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #menu{
@@ -42,7 +66,6 @@ header{
     height: 40px;
     background-color: #F5D5ED;
     margin-bottom: 15px;
-
 }
 
 .flex-container{
@@ -77,5 +100,4 @@ footer{
     bottom: 0;
     background-color: #8CAE68;
     margin-top: 15px;
-
 }
