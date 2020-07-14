@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0ch;
+}
+
+body{
+    background-image: url("background.png") 
+}
+
+header{
+
+}
+
+#topo{
+    width: 100%;
+    height: 40px;
+    background-color: #D991BA;
+}
+
+.imagensTopo{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagemCima{
+    z-index: 2;
+
+}
+
+#imagemBaixo{
+    z-index: 1;
+
+}
+
+#menu{
+
+    width: 100%;
+    height: 40px;
+    background-color: #F5D5ED;
+    margin-bottom: 15px;
+
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 300px;
+}
+
+.colunaLateral{
+    width: 20%;
+}
+
+#colunaMeio{
+    width: 55%;
+}
+
+.colunaLateral{
+    width: 20%;
+}
+
+.coluna{
+    background-color: #EBB9DF;
+    border-radius: 2%;
+    border-color: #F5D5ED;
+    border-style: solid;
+}
+
+footer{
+    width: 100%;
+    min-height: 40px;
+    bottom: 0;
+    background-color: #8CAE68;
+    margin-top: 15px;
+
+}
