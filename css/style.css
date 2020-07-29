@@ -13,18 +13,17 @@ body {
 
 header {
     height: 96vh;
-    width: 100vw;
+    
 }
 
 #topo {
     height: 5vh;
-    width: 100vw;
     position: fixed;
 }
 
 .botao {
     border: none;
-    color: #F5D5ED;
+    color: #d3e269;
     padding: 5px 20px;
     text-align: center;
     text-decoration: none;
@@ -34,18 +33,17 @@ header {
 }
 
 #botaoTopo {
-    background-color: #b95b90;
+    background-color: #75ae69;
     transition-duration: 0.4s;
 }
 
 #botaoTopo:hover  {
-    background-color: #D991BA;
+    background-color: #d3e269;
     color: white;
 }
 
 #imagensHeader {
     height: 96vh;
-    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,16 +52,34 @@ header {
     background-size: 100% 100%;
 }
 
-#imagensHeader a img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
 #menu {
     width: 100%;
     height: 40px;
-    background-color: #F5D5ED;
+    background-color: #f8727d;
     margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    display: inline;
+    float: left;
+}
+
+.botaoMenu a {
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 7px 20px;
+    text-decoration: none;
+    height: 26px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 23px;
+    margin: 0 0;
+}
+
+.botaoMenu a:hover {
+    background-color: #fed768;
 }
 
 .flex-container {
@@ -86,9 +102,9 @@ header {
 }
 
 .coluna {
-    background-color: #EBB9DF;
+    background-color: #ffccbb;
     border-radius: 2%;
-    border-color: #F5D5ED;
+    border-color: #ffa9b0;
     border-style: solid;
 }
 
