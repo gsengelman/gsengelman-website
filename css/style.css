@@ -11,11 +11,6 @@ body {
     background-image: url("/images/background.png") 
 }
 
-header {
-    height: 96vh;
-    
-}
-
 #topo {
     height: 5vh;
     position: fixed;
@@ -43,7 +38,8 @@ header {
 }
 
 #imagensHeader {
-    height: 96vh;
+    height: calc(100vh - 40px);
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,16 +48,20 @@ header {
     background-size: 100% 100%;
 }
 
+#imagemPrincipal {
+    width: 100%;
+}
+
 #menu {
     width: 100%;
-    height: 40px;
     background-color: #f8727d;
     margin-bottom: 15px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-li {
+.itemMenu {
     display: inline;
     float: left;
 }
@@ -85,27 +85,93 @@ li {
 .flex-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    min-height: 300px;
+    justify-content: center;
+   
 }
 
-.colunaLateral {
-    width: 20%;
+#colunaLateral {
+    width: 270px;
+    margin-left: 7px;
+    margin-right: 7px;
 }
 
-#colunaMeio {
-    width: 55%;
+#minhaFoto {
+    margin-top: 20px;
+    width: 80%;
+    border-radius: 100%;
+    border-color: #f8727d;
+    border-style: solid;
 }
 
-.colunaLateral {
-    width: 20%;
+h1{
+    color: #f8727d;
+    text-align: center;
+    margin: 12px 0;
+    font-family: 'Lobster', cursive;
+    text-shadow: 1px 1px #00000088;
 }
+
+h2{
+    color: #d3e269;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    text-shadow: 1px 1px #00000088;
+}
+
+
+.texto {
+    text-align: center;
+    color: #9c3734;
+    font-family: 'Bitter', serif;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.flexHorizontal {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.gatos {
+    width: 120px;
+}
+
+#textoGatos {
+    color: #f8727d;
+    text-align: center;
+    font-size: 15px;
+}
+
+#colunaPrincipal {
+    width: 1000px;
+    margin-right: 10px;
+}
+
 
 .coluna {
-    background-color: #ffccbb;
+    background-color: #ffccbbd5;
     border-radius: 2%;
     border-color: #ffa9b0;
     border-style: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.videoContainer {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+}
+  
+  .videoContainer iframe{
+    position: absolute;
+    top:5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 footer {
@@ -114,4 +180,29 @@ footer {
     bottom: 0;
     background-color: #8CAE68;
     margin-top: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    #imagensHeader {
+      background-size: cover;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .coluna{
+        box-sizing: border-box;
+        margin: 5 0;
+    }
+
+    #colunaLateral {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #colunaPrincipal {
+        width: 100%;
+    }
 }
