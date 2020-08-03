@@ -8,7 +8,7 @@ html  {
 }
 
 body {
-    background-image: url("/images/background.png") 
+    background-image: url("../images/background.png") 
 }
 
 #topo {
@@ -43,7 +43,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("/images/backgroundPrincipal.gif");
+    background-image: url("../images/backgroundPrincipal.gif");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
