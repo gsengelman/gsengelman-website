@@ -1,4 +1,5 @@
 <html lang="en" id="top">
+
 <head>
     <meta charset="UTF-8">
     <title>Graciela</title>
@@ -8,71 +9,77 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
-
-
-
 </head>
+
 <body>
     <header>
         <div id="topo">
             <a href="#top">
-                <span class="botao" id= "botaoTopo">
-                    <i class="fa fa-arrow-circle-up" style="font-size: 36px;"></i>
-                </span>
+                <div class="botao" id= "botaoTopo">
+                <i class="fa fa-arrow-circle-up" style="font-size: 36px;"></i>
+                </div>
             </a>
         </div>
-            <div id="imagensHeader">
-
-                <a href="https://www.youtube.com/loonatheworld/" target="_blank"><img src="images/logo.png" alt="principal"></a>
-
-            </div>
-
+        <div id="imagensHeader">
+            <a href="https://www.youtube.com/loonatheworld/" target="_blank">
+                <img id="imagemPrincipal" src="images/logo.png" alt="principal">
+            </a>
+        </div>
     </header>
 
     <nav>
-        <ul id="menu">
-
-            <li class="botaoMenu"><a href="mailto://gsengelman@inf.ufrgs.br">Me Contate</a></li>
-
-            <li class="botaoMenu"><a href="https://www.linkedin.com/in/graciengelman/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-
-            <li class="botaoMenu"><a href="https://github.com/mokociela"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-
-            <li class="botaoMenu"><a href="https://www.facebook.com/graci.sama/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-
-            <li class="botaoMenu"><a href="https://www.instagram.com/gurashii/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-
-            <li class="botaoMenu"><a href="https://steamcommunity.com/profiles/76561198072724508/"><i class="fa fa-steam-square" aria-hidden="true"></i></a></li>
-
-            <li class="botaoMenu"><a href="https://open.spotify.com/user/12182277261"><i class="fa fa-spotify" aria-hidden="true"></i></a></li>
-
-            <li class="botaoMenu"><a href="https://br.pinterest.com/thundernyan/"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-
-        
-        </ul>
+        <div id="menu">
+            <div class="botaoMenu itemMenu"><a href="mailto://gsengelman@inf.ufrgs.br">Me Contate</a></div>
+            <div class="botaoMenu itemMenu"><a href="https://www.linkedin.com/in/graciengelman/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></div>
+            <div class="botaoMenu itemMenu"><a href="https://github.com/mokociela"><i class="fa fa-github" aria-hidden="true"></i></a></div>
+            <div class="botaoMenu itemMenu"><a href="https://www.facebook.com/graci.sama/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+            <div class="botaoMenu itemMenu"><a href="https://www.instagram.com/gurashii/"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+            <div class="botaoMenu itemMenu"><a href="https://steamcommunity.com/profiles/76561198072724508/"><i class="fa fa-steam-square" aria-hidden="true"></i></a></div>
+            <div class="botaoMenu itemMenu"><a href="https://open.spotify.com/user/12182277261"><i class="fa fa-spotify" aria-hidden="true"></i></a></div>
+            <div class="botaoMenu itemMenu"><a href="https://br.pinterest.com/thundernyan/"><i class="fa fa-pinterest" aria-hidden="true"></i></a></div>
+        </div>
     </nav>
 
-    <div class="flex-container">
 
-        <div class="colunaLateral coluna">
-            <img id="minhaFoto" src="images/minhaFoto.png" alt="eu">
-            <div> <h1>Graciela Schneider Engelman</h1></div>
-            <span class="texto"> Olá! Tenho 22 anos e estou aprendendo web. Gosto de gatos e de coisas fofas...<br>
-                Sou fã de Mahou Shoujo e One Piece, atualmente jogadora de FFXIV e dona de um lindo Nintendo Switch.<br>
-                ♥ 
-            </span>
-            <div id="bebelMeg">
-                <img class="gatos" src="images/bebel.jpg" alt="bebel">
-                <img class="gatos" src="images/meg.jpg" alt="meg">
+        <div class="flex-container">
+            <div id="colunaLateral" class="coluna">
+                <img id="minhaFoto" src="images/minhaFoto.png" alt="eu">
+                <div> <h1>Graciela Schneider Engelman</h1></div>
+                <span class="texto"> Olá! Tenho 22 anos e Gosto de gatos e de coisas fofas...<br>
+                    Sou fã de Mahou Shoujo e One Piece, atualmente jogadora de FFXIV e dona de um lindo Nintendo Switch.<br>
+                    ♥ 
+                </span>
+                <div class="flexHorizontal">
+                    <img class="gatos" src="images/bebel.png" alt="bebel">
+                    <img class="gatos" src="images/meg.png" alt="meg">
+                </div>
+                <span class="texto" id="textoGatos"> Achei que fosse necessário mostrar meus gatos aqui...</span>
             </div>
-            <span class="texto" id="textoGatos"> Achei que fosse necessário mostrar meus gatos aqui...</span>
+            
+            <div id="colunaPrincipal" class="coluna">
+                
+                <h1>Sobre o Website</h1>
+                <span class="texto">
+                    Estou aprendendo web com esse espaço! <br>
+                    Atualmente para fazer esse site foram usados apenas CSS e HTML. Meu próximo passo é aprender JavaScript.
+                </span>    
+                <h1>Youtube Fitdance K-pop Playlist</h1>
+                <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/videoseries?list=PLbezOI_tTh0IcddyqxtoCMy8stmYFZ-a4" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe> 
+                <br><br>
+                <img src="images/tenor.gif" alt="dom">
+                <span class="texto">!! Em construção !!</span>
+            </div>
         </div>
 
-        <div id="colunaPrincipal" class="coluna">div2</div>
+    
 
-    </div>
-
-    <footer> fim do saite</footer>
+    <footer><h2>Obrigada pela visita!</h2></footer>
 
 </body>
 </html>
