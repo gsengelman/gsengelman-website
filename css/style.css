@@ -80,6 +80,7 @@ body {
 
 .botaoMenu a:hover {
     background-color: #fed768;
+    transition-duration: 0.2s;
 }
 
 .flex-container {
